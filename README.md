@@ -10,7 +10,12 @@ This system,
 * Display the matching houses/apartments along with location, price, bedrooms, bathrooms, and year built
 
 ## Instruction
-1. Install Packages
+1. Install requirements
 ```commandline
-python -m pip install redfin
+pip install -r requirements.txt
+```
+
+2. Run main.py file
+```commandline
+python main.py
 ```
