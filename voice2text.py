@@ -135,7 +135,8 @@ def userCommand():
     #print(result)
     return result
 
-if __name__ == '__main__':
+
+def run_voice2text():
     # Setting up computer in-built audio voice for the prompt
     #########################################################
     engine = pyttsx3.init()
@@ -145,10 +146,10 @@ if __name__ == '__main__':
     location, price, room, date = initiate_dialogue()
     print("Location:", location, ", Price:", price, ", Room Number:", room, ", Date:", date)
     text = "Okay, I will find an apartment of " + room+" rooms at"+ location+ " available from"+ date
-    engine.say (text)
+    engine.say(text)
     engine.runAndWait()
     # print(sent_parse(string)) # pass the converted string text of the user voice to the regex parser. It will extract food items from the string text
-
+    return location, price, room, date
             
     
     
